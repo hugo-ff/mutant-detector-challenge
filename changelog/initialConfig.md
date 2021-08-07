@@ -1,0 +1,33 @@
+### Added
+
+- changelog file and folder for partial changelogs were created
+- @babel/plugin-transform-arrow-functions installed to transpile any arrow function into ES5 compatible function expressions
+- @babel/eslint-parser package installed in order to lint all valid babel code
+- babel-plugin-module-resolver package installed
+- prepare-commit-msg and commit-msg husky's hooks were created
+- @commitlint/cli package installed in order to give a better experience when commits are written
+- @commitlint/config-conventional package installed and commitlint.config file was created
+- cz-conventional-changelog adapter installed to set the rules that commitizen will work with
+- commitizen package installed in order to help to follow 'conventional commits' convention when submit a commit
+- react jsx related rules added to eslint config
+- react and react-dom packages installed
+- husky pre-commit hook
+- husky package installed in order to lint code before commit and lint commit messages
+- eslint-import-resolver-babel-module package installed
+- eslint-plugin-json package installed for lint json files
+- lint-staged package installed and script config for prettier and eslint fix were added
+- eslint-plugin-prettier package installed in order to show eslint warns / errors based in prettier enforced rules
+- prettier config
+- eslint-config-prettier package installed in order to turn off all eslint rules that might conflict with Prettier
+- prettierignore was created
+- prettier package installed for code formatting
+- eslint config
+- eslint package installed in order to maintain consistency and code styling across the app development following the Airbnb JavaScript style-guide: eslint-config-airbnb package
+- @babel/polyfill package installed
+- @babel/core package installed to convert modern JS into a production-ready version compatible with all browsers
+- @babel/preset-env package that groups several commonly used Babel plugins bundled into a preset that converts modern JavaScript features into retro-compatible syntax
+- html-webpack-plugin package installed for generate HTML files working alongside webpack
+- webpack-dev-server package installed in order to use webpack with a development server that provides live reloading
+- @babel/preset-react package installed for extends Babel support to JSX
+- babel-loader package installed for transpiling ES6+ into ES5 for retro-compatibility purposes
+- webpack package installed for bundling
