@@ -1,41 +1,62 @@
 {
-  "name": "mutant-detector-challenge",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hugo-ff/mutant-detector-challenge.git"
-  },
-  "keywords": [],
-  "author": "Hugo Flotts",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hugo-ff/mutant-detector-challenge/issues"
-  },
-  "homepage": "https://github.com/hugo-ff/mutant-detector-challenge#readme",
-  "dependencies": {
-    "@babel/polyfill": "^7.12.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@babel/preset-react": "^7.14.5",
-    "babel-loader": "^8.2.2",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.23.4",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
-    "html-webpack-plugin": "^5.3.2",
-    "husky": "^7.0.1",
-    "webpack": "^5.49.0",
-    "webpack-dev-server": "^3.11.2"
-  }
+	"name": "mutant-detector-challenge",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepare": "husky install"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged",
+			"commit-msg": "./hooks/commit-msg $HUSKY_GIT_PARAMS"
+		}
+	},
+	"lint-staged": {
+		"*.{js,jsx,json}": [
+			"prettier --write",
+			"eslint --fix"
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hugo-ff/mutant-detector-challenge.git"
+	},
+	"keywords": [],
+	"author": "Hugo Flotts",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hugo-ff/mutant-detector-challenge/issues"
+	},
+	"homepage": "https://github.com/hugo-ff/mutant-detector-challenge#readme",
+	"dependencies": {
+		"@babel/polyfill": "^7.12.1",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.15.0",
+		"@babel/eslint-parser": "^7.15.0",
+		"@babel/preset-env": "^7.15.0",
+		"@babel/preset-react": "^7.14.5",
+		"babel-loader": "^8.2.2",
+		"babel-plugin-module-resolver": "^4.1.0",
+		"eslint": "^7.32.0",
+		"eslint-config-airbnb": "^18.2.1",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-babel-module": "^5.3.1",
+		"eslint-plugin-import": "^2.23.4",
+		"eslint-plugin-json": "^3.1.0",
+		"eslint-plugin-jsx-a11y": "^6.4.1",
+		"eslint-plugin-prettier": "^3.4.0",
+		"eslint-plugin-react": "^7.24.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"html-webpack-plugin": "^5.3.2",
+		"husky": "^7.0.1",
+		"lint-staged": "^11.1.2",
+		"prettier": "2.3.2",
+		"webpack": "^5.49.0",
+		"webpack-dev-server": "^3.11.2"
+	}
 }
