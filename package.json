@@ -1,17 +1,11 @@
 {
 	"name": "mutant-detector-challenge",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A mutant detector developed in order to recruit mutants for Magneto",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepare": "husky install"
-	},
-	"husky": {
-		"hooks": {
-			"pre-commit": "lint-staged",
-			"commit-msg": "./hooks/commit-msg $HUSKY_GIT_PARAMS"
-		}
 	},
 	"lint-staged": {
 		"*.{js,jsx,json}": [
@@ -40,8 +34,12 @@
 		"@babel/eslint-parser": "^7.15.0",
 		"@babel/preset-env": "^7.15.0",
 		"@babel/preset-react": "^7.14.5",
+		"@commitlint/cli": "^13.1.0",
+		"@commitlint/config-conventional": "^13.1.0",
 		"babel-loader": "^8.2.2",
 		"babel-plugin-module-resolver": "^4.1.0",
+		"commitizen": "^4.2.4",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^7.32.0",
 		"eslint-config-airbnb": "^18.2.1",
 		"eslint-config-prettier": "^8.3.0",
@@ -58,5 +56,10 @@
 		"prettier": "2.3.2",
 		"webpack": "^5.49.0",
 		"webpack-dev-server": "^3.11.2"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
