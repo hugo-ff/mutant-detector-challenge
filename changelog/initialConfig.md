@@ -1,5 +1,21 @@
 ### Added
 
+- eslint-plugin-testing-library and eslint-plugin-jest-dom installed in order to enforce best practices when writing tests
+- jest config and first App test
+- @testing-library/react and @testing-library/jest-dom were installed in order to create a virtual DOM for testing and to use DOM based matchers
+- eslint-plugin-jest installed for help in testing best practices
+- babel-jest installed for enable babel support with jest
+- jest installed in order to write unit and integration tests following TDD approach
+- import/no-extraneous-dependencies rule added to eslint config
+- basic react folder structure
+- webpack config
+- react-refresh-webpack-plugin and react refresh installed in order to preserve state changes on live-reloading during development
+- webpack-merge installed in order to manage separate dev / prod webpack setups
+- babel-plugin-styled-components installed for better debug experience and manage minification
+- styled-components installed for manage styles
+- clean-webpack-plugin installed in order to remove old bundles from dist folder
+- core-js package installed and added to babel config in order to be able to include polyfills in the production bundle
+- webpack-cli installed in order to be able to use the webpack CLI
 - changelog file and folder for partial changelogs were created
 - @babel/plugin-transform-arrow-functions installed to transpile any arrow function into ES5 compatible function expressions
 - @babel/eslint-parser package installed in order to lint all valid babel code
