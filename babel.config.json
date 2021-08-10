@@ -19,7 +19,15 @@
 			"module-resolver",
 			{
 				"root": ["."],
-				"alias": {}
+				"alias": {
+					"src": "./src",
+					"assets": "./src/assets",
+					"components": "./src/js/components",
+					"layouts": "./src/js/layouts",
+					"theme": "./src/js/theme",
+					"utils": "./src/js/utils",
+					"hooks": "./src/js/hooks"
+				}
 			}
 		],
 		[
