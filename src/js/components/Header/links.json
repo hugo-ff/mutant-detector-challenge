@@ -1,0 +1,14 @@
+[
+	{
+		"label": "Detector de mutantes",
+		"href": "/detector"
+	},
+	{
+		"label": "Cargar mutantes",
+		"href": "/cargar-mutantes"
+	},
+	{
+		"label": "Mis mutantes",
+		"href": "/mis-mutantes"
+	}
+]

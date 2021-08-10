@@ -21,12 +21,14 @@
 				"root": ["."],
 				"alias": {
 					"src": "./src",
+					"js": "./src/js",
 					"assets": "./src/assets",
 					"components": "./src/js/components",
 					"layouts": "./src/js/layouts",
 					"theme": "./src/js/theme",
 					"utils": "./src/js/utils",
-					"hooks": "./src/js/hooks"
+					"hooks": "./src/js/hooks",
+					"pages": "./src/js/pages"
 				}
 			}
 		],

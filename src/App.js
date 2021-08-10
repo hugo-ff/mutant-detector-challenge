@@ -1,3 +1,10 @@
-const App = () => <h1>Magneto&apos;s Mutant Detector</h1>;
+import MainLayout from 'layouts/MainLayout';
+import Home from 'pages/Home';
+
+const App = () => (
+	<MainLayout>
+		<Home />
+	</MainLayout>
+);
 
 export default App;
